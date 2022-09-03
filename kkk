@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+  <title>
+    Ajude E eles te ajudarão 
+  </title>
+  
+  <meta charset="UTF-8" />
+<style type="text/css">
+
+    .abas {
+    position: relative;
+    }
+    .aba {
+    display: inline;
+    }
+    .aba > a {
+    	
+    float: left;
+    padding: 0.5em 1em;
+    background: linear-gradient(#FFF, #EEE);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CCC #CCC #FFF;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    }
+    .aba:not(:target) a {
+    border-bottom: 0 none;
+    }
+    .aba:target a, a:hover {
+    background: white;
+    }
+    .conteudo {
+    position: absolute;
+    left: 0;
+    
+    top: calc(3em + 4px); /* altura do link + bordas */
+    
+    z-index: -7;
+    border: 1px solid #CCC;
+    background-color: white;
+    }
+    .aba:target .conteudo {
+    z-index: -1;
+    }
+  </style>
+ 
+</head>
+<body>
+  <!-- Criando a listagem -->
+<ul class="abas">
+    <!-- Aqui, criação da primeira aba -->
+    <li class="aba" id="aba-1">
+     <a href="#aba-1">Aba1</a>
+<section class="conteudo">CASTRAPET vem aí!
+Uma parceria entre o Governo do Estado, o IAT e a SEDEST o programa inédito de castração de gatos e cães contemplará Fazenda Rio Grande
+</section></li>
+<!-- Aqui, criação da segunda aba -->
+    <li class="aba" id="aba-2">
+     <a href="#aba-2">Aba 2</a> 
+<section class="conteudo"> Você pode ajudar a promover a castração de gatos e cachorros de rua. Castrá-los é uma das melhores formas de reduzir o número de animais de rua. Seja um voluntário ou voluntária em ONGs de animais. Denuncie maus tratos e abandono de animais. </section></li>
+<!-- Aqui, criação da terceira aba -->
+    <li class="aba" id="aba-3">
+     <a href="#aba-3">Aba 3</a> 
+<section class="conteudo"> Uma grande quantidade de animais nas rua pode aumentar a incidência de algumas doenças que são transmitidas por vetores, por mosquitos, como a leishmaniose, doenças fúngicas, como é o caso das esporotricose nos gatos e a raiva, apesar que o Brasil tem um ótimo controle da raiva através da vacinação anual.  </section></li>
+</ul>
+</body>
+</html>
